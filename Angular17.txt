@@ -271,7 +271,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ContactComponent } from './contact/contact.component';
-import { RouterAppComponent } from './router.component'; 
+import { RouterAppComponent } from './router.component'; <---------------------------
 import {Routes,RouterModule} from '@angular/router';   <-------------------------------------
 
 const appRoutes: Routes =                  <-------------------------------------------
@@ -287,7 +287,7 @@ const appRoutes: Routes =                  <------------------------------------
     LoginComponent,
     RegisterComponent,
     ContactComponent,
-    RouterAppComponent  
+    RouterAppComponent  <-----------------------------------------
   ],
   imports: [
     BrowserModule,
@@ -295,7 +295,7 @@ const appRoutes: Routes =                  <------------------------------------
     RouterModule.forRoot(appRoutes)  <---------------------------------
   ],
   providers: [],
-  bootstrap: [RouterAppComponent]    
+  bootstrap: [RouterAppComponent]    <------------------------------
 })
 export class AppModule { }
 ------------------------------------------------------------------------------
@@ -593,9 +593,9 @@ public Click()
   }
 }
 }
-------------------------------------Two way binding-----------------------------------------
+------------------------------Two way binding-----------------------------------------
 Example-2
---------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1162,7 +1162,7 @@ import { Multiplierpipe } from './multiplier/multiplier.pipe';
 })
 export class AppModule { }
 
-----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------
 
 import {Pipe,PipeTransform} from '@angular/core';
 @Pipe({name: 'sentencecase'})
@@ -1178,6 +1178,11 @@ export class SentenceCase implements PipeTransform
     }
 }
 -------------------------------------------------------------------------------------
+example8.html
+-------------------------------
+The Sentence case is {{msg | sentencecase }}
+
+----------------------------------------------------------------------------------------------
 import { Component } from '@angular/core';
 @Component({
   selector: 'app-multiplier',
@@ -1293,8 +1298,8 @@ export class AmazonComponent
   public data = [
    {Name: 'JBL Speaker', Price: 4500.55, Photo: 'assets/jblspeaker.jpg'},
    {Name: 'Earpods', Price: 3000.44, Photo: 'assets/earpods.jpg'},
-   {Name: 'Nike Casuals', Price: 6000.44, Photo: 'assets/shoe.jpg'},
-   {Name: 'Lee Cooper Boot', Price: 2000.44, Photo: 'assets/shoe1.jpg'},
+   {Name: 'Nike Casuals', Price: 6000.44, Photo: 'assets/shoe.jpeg'},
+   {Name: 'Lee Cooper Boot', Price: 2000.44, Photo: 'assets/shoe1.jpeg'},
    {Name: 'Shirt', Price: 1000.44, Photo: 'assets/shirt.jpg'},
    {Name: 'Jeans', Price: 4000.44, Photo: 'assets/jeans.jpg'},
   ];
@@ -1361,7 +1366,7 @@ public OnCategoryChange()
      }
   }
 }
------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------LAST WAR--------------------------------------------------------
 Angular Service
 --------------------------
 It is used for creating user-defined business logic which can be used and reused in the application by injecting into any component.
@@ -1632,7 +1637,7 @@ we have some directives to validate a form
 ------------------------------------------------------------------------------------------------------------------------------
 7)NgModel:- dynamic element.it is model who's value is changed dynamically.
 example:- <input type="text" [(ngModel)]="username">
-8)NgClass:-dynamic assignment of css class.we can change the html element dynamically.
+8)NgClass:-dynamic assignment of css class. we can change the html element dynamically.
 example:-<div[ngClass]=" 'cssClassName' "> Your text </div>
 9)NgStyle:-it is defined inline style for html element.
 it will applied to single line.
