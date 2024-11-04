@@ -18,9 +18,10 @@ Frontend Questions
 15.) answer--> structural decorator(ngIf,ngFor,ngSwitch) 
 16.) a:visited
 17.) answer: Query Parameter and route parameter
-18.) answer: --inline--template 
+18.) answer: -->inline template 
 19) <router-outlet></router-outlet>
-20) 
+20)default provider used in angular --->useClass
+21)
 
 
 
